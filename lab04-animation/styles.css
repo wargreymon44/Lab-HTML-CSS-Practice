@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8433e8 0%, #6b1fd6 100%);
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-btn {
+    display: inline-block;
+    background: white;
+    color: #8433e8;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.back-btn:hover {
+    transform: translateX(-5px);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.labs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.lab-item {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.lab-item h2 {
+    color: #8433e8;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.demo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    border: 2px solid #8433e8;
+    padding: 20px;
+}
+
+
+.btn-1 {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #8433e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #ff4081;
+}
+
+
+.card-1 {
+    width: 150px;
+    height: 100px;
+    background-color: #8433e8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card-1:hover {
+    transform: scale(1.2);
+}
+
+
+.circle-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #faf25b;
+    color: #8433e8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.circle-1:hover {
+    transform: rotate(360deg);
+}
+
+
+.box-1 {
+    width: 150px;
+    height: 100px;
+    background-color: #4a90e2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.box-1:hover {
+    transform: translateY(-20px);
+}
+
+
+.image-box-1 {
+    width: 120px;
+    height: 120px;
+    background-color: #4caf50;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.image-box-1:hover {
+    opacity: 0.3;
+}
+
+
+.multi-effect {
+    width: 150px;
+    height: 100px;
+    background-color: #8433e8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.multi-effect:hover {
+    background-color: #ff4081;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.spin-forever {
+    width: 100px;
+    height: 100px;
+    background-color: #8433e8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bounce-button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    animation: bounce 1s ease infinite;
+}
+
+.bounce-button:hover {
+    animation-play-state: paused;
+    background-color: #f50057;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}

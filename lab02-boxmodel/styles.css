@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8433e8 0%, #6b1fd6 100%);
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.back-btn {
+    display: inline-block;
+    background: white;
+    color: #8433e8;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.back-btn:hover {
+    transform: translateX(-5px);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.labs-container {
+    display: grid;
+    gap: 20px;
+}
+
+.lab-item {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lab-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.lab-num {
+    background: #8433e8;
+    color: #faf25b;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.lab-header h2 {
+    color: #8433e8;
+    font-size: 1.3rem;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.demo-box {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px dashed #ddd;
+}
+
+.lab-item h2 {
+    color: #8433e8;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.demo-box {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #8433e8;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== ตัวอย่างที่ให้ทำตาม ===== */
+
+/* Task 1 - การ์ดพื้นฐาน */
+.example-card-basic {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Task 2 - การ์ดที่มีเงา */
+.example-card-shadow {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 300px;
+}
+
+.example-card-shadow h3 {
+    margin: 0 0 10px 0;
+    color: #8433e8;
+}
+
+.example-card-shadow p {
+    margin: 0;
+    color: #666;
+}
+
+/* Task 3 - ป้ายสีสัน */
+.example-badge-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.example-badge-box .badge-red {
+    background: #ff4444;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.example-badge-box .badge-blue {
+    background: #4a90e2;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.example-badge-box .badge-green {
+    background: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Task 4 - กรอบรูป */
+.example-image-frame {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #8433e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Task 5 - บัตรข้อมูล */
+.example-info-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.example-info-card .avatar {
+    width: 60px;
+    height: 60px;
+    background: #8433e8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.example-info-card .info h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.example-info-card .info p {
+    margin: 0;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Task 6 - กล่อง 3 กล่อง */
+.example-three-boxes {
+    display: flex;
+    gap: 15px;
+}
+
+.example-three-boxes>div {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 12px;
+}
+
+.example-three-boxes .box-1 {
+    background: #ff4444;
+    box-shadow: 0 4px 8px rgba(255, 68, 68, 0.3);
+}
+
+.example-three-boxes .box-2 {
+    background: #4a90e2;
+    box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+}
+
+.example-three-boxes .box-3 {
+    background: #4caf50;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Task 7 - ปุ่มพิเศษ */
+.example-fancy-button {
+    background: linear-gradient(135deg, #8433e8 0%, #6b1fd6 100%);
+    color: #faf25b;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(132, 51, 232, 0.4);
+}
+
+/* Task 8 - การ์ดโปรไฟล์ */
+.example-profile-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    max-width: 280px;
+    position: relative;
+}
+
+.example-profile-card .profile-header {
+    background: linear-gradient(135deg, #8433e8 0%, #6b1fd6 100%);
+    height: 100px;
+}
+
+.example-profile-card .profile-avatar {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: -40px auto 0;
+    position: relative;
+    border: 4px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.example-profile-card .profile-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.example-profile-card .profile-content h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.example-profile-card .profile-content p {
+    margin: 0;
+    color: #999;
+    font-size: 0.9rem;
+}

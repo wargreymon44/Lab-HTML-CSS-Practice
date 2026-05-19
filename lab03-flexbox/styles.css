@@ -1,0 +1,648 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8433e8 0%, #6b1fd6 100%);
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.back-btn {
+    display: inline-block;
+    background: white;
+    color: #8433e8;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.back-btn:hover {
+    transform: translateX(-5px);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.labs-container {
+    display: grid;
+    gap: 20px;
+}
+
+.lab-item {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lab-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.lab-num {
+    background: #8433e8;
+    color: #faf25b;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.lab-header h2 {
+    color: #8433e8;
+    font-size: 1.3rem;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.lab-item h2 {
+    color: #8433e8;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.demo-box {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #8433e8;
+    min-height: 120px;
+}
+
+/* ===== ตัวอย่างที่ให้ทำตาม ===== */
+
+/* Task 1 - เมนูแนวนอน */
+.example-navbar {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.example-navbar .nav-item {
+    padding: 15px 25px;
+    background: #8433e8;
+    color: white;
+    font-weight: 500;
+    border-right: 2px solid #6b1fd6;
+}
+
+.example-navbar .nav-item:last-child {
+    border-right: none;
+}
+
+/* Task 2 - กล่องตรงกลาง */
+.example-center-box {
+    background: white;
+    height: 200px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-center-box .centered {
+    width: 80px;
+    height: 80px;
+    background: #8433e8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+/* Task 3 - กระจายเท่าๆ กัน */
+.example-space-between {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.example-space-between .item {
+    width: 60px;
+    height: 60px;
+    background: #8433e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+/* Task 4 - การ์ด 2 คอลัมน์ */
+.example-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.example-grid-2col .card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Task 5 - การ์ด 3 คอลัมน์ */
+.example-grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.example-grid-3col .color-box {
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.example-grid-3col .red {
+    background: #ff4444;
+}
+
+.example-grid-3col .blue {
+    background: #4a90e2;
+}
+
+.example-grid-3col .green {
+    background: #4caf50;
+}
+
+/* Task 6 - กล่องที่ขึ้นบรรทัดใหม่ */
+.example-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.example-flex-wrap .tag {
+    background: #8433e8;
+    color: #faf25b;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Task 7 - Header-Content-Footer */
+.example-layout {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.example-layout .header {
+    background: #8433e8;
+    color: #faf25b;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.example-layout .content {
+    flex: 1;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.example-layout .footer {
+    background: #333;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Task 8 - Gallery 4 คอลัมน์ */
+.example-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.example-gallery .photo {
+    background: white;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Task 9 - Sidebar Layout */
+.example-sidebar-layout {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+}
+
+.example-sidebar-layout .sidebar {
+    width: 200px;
+    background: #8433e8;
+    padding: 15px;
+}
+
+.example-sidebar-layout .menu-item {
+    color: white;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+}
+
+.example-sidebar-layout .main-content {
+    flex: 1;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.example-sidebar-layout h3 {
+    color: #8433e8;
+    margin-bottom: 10px;
+}
+
+.example-sidebar-layout p {
+    color: #666;
+}
+
+/* Task 10 - Grid แบบไม่เท่ากัน */
+.example-grid-unequal {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+}
+
+.example-grid-unequal .box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-grid-unequal .big {
+    grid-row: span 2;
+    background: #8433e8;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.example-grid-unequal .wide {
+    grid-column: span 2;
+    background: #ff4081;
+    color: white;
+}
+
+.example-grid-unequal .small {
+    background: #4a90e2;
+    color: white;
+}
+
+/* Task 11 - Dashboard Cards */
+.example-dashboard {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.example-dashboard .stat-card {
+    flex: 1;
+    min-width: 150px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-dashboard .stat-icon {
+    width: 50px;
+    height: 50px;
+    background: #8433e8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+.example-dashboard .stat-info h4 {
+    margin: 0 0 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.example-dashboard .stat-info p {
+    margin: 0;
+    color: #8433e8;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Task 12 - Footer 3 คอลัมน์ */
+.example-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: #333;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.example-footer .footer-col {
+    color: white;
+}
+
+.example-footer h4 {
+    color: #faf25b;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.example-footer p {
+    color: #ccc;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* Task 13 - Video Card Grid */
+.example-video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.example-video-grid .video-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-video-grid .video-info {
+    padding: 12px;
+}
+
+.example-video-grid h5 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.example-video-grid p {
+    margin: 0;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+/* Task 14 - Product Card */
+.example-product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.example-product-card .product-details {
+    padding: 20px;
+}
+
+.example-product-card h4 {
+    margin: 0 0 8px 0;
+    color: #333;
+}
+
+.example-product-card .price {
+    color: #8433e8;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+.example-product-card .buy-btn {
+    width: 100%;
+    background: #8433e8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Task 15 - Blog Layout */
+.example-blog-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.example-blog-layout .blog-main {
+    padding-right: 20px;
+    border-right: 2px solid #f0f0f0;
+}
+
+.example-blog-layout h3 {
+    color: #8433e8;
+    margin-bottom: 10px;
+}
+
+.example-blog-layout .blog-main p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.example-blog-layout h4 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.example-blog-layout .sidebar-item {
+    background: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* Task 16 - Masonry Grid */
+.example-masonry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 80px;
+    gap: 12px;
+}
+
+.example-masonry .masonry-item {
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-masonry .tall {
+    grid-row: span 2;
+    background: #8433e8;
+}
+
+/* Task 17 - Pricing Table */
+.example-pricing {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.example-pricing .price-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+}
+
+.example-pricing .price-card.featured {
+    border-color: #8433e8;
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(132, 51, 232, 0.3);
+}
+
+.example-pricing h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.example-pricing .price {
+    color: #8433e8;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.example-pricing p {
+    margin: 0;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Task 18 - App Store Layout */
+.example-app-store {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.example-app-store .app-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-app-store .app-icon {
+    width: 60px;
+    height: 60px;
+    background: #8433e8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.example-app-store .app-details {
+    flex: 1;
+}
+
+.example-app-store h5 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.example-app-store p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.example-app-store .get-btn {
+    background: #8433e8;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
